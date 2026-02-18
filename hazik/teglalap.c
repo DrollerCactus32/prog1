@@ -1,18 +1,22 @@
 #include <stdio.h>
 
-int main() {
-    int a, b;
+int main()
+{
+int a;
+int b;
+int terulet;
+int kerulet;
 
-    printf("Add meg a téglalap egyik oldalának hosszát: ");
-    scanf("%d", &a);
-    printf("Add meg a téglalap másik oldalának hosszát: ");
-    scanf("%d", &b);
+printf("Adja meg a teglalap A oldalanak hosszat: \n");
+scanf("%d", &a);
 
-    int kerulet = 2 * (a + b);
-    int terulet = a * b;
+printf("Adja meg a teglalap B oldalanak hosszat: \n");
+scanf("%d", &b);
 
-    printf("\nA téglalap kerülete: %d\n", kerulet);
-    printf("A téglalap területe: %d\n", terulet);
+kerulet= 2*a+2*b;
+printf("A teglalap kerulete:, %d\n", kerulet);
+terulet = a*b;
+printf("A teglalap terulete:, %d\n", terulet);
 
-    return 0;
+return 0;
 }
